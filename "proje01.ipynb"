@@ -1,0 +1,272 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "mount_file_id": "18m1ptSD4vUnvprohnZVFFoqsQuNNO_RS",
+      "authorship_tag": "ABX9TyPb9e85ZoxTwn89z9H/lzwN",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ElcinComak/hu-bby162-2023/blob/main/%22proje01.ipynb%22\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2IOVpRK10tJj",
+        "outputId": "2127a2e9-c381-4475-cfb9-3d72b206e76d"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'ev': 'home', 'araba': 'car'}\n",
+            "dict_keys(['ev', 'araba'])\n"
+          ]
+        }
+      ],
+      "source": [
+        "sozluk = {\"ev\":\"home\", \"araba\":\"car\"}\n",
+        "print(sozluk)\n",
+        "print(sozluk.keys())"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "yapilacaklar = [\"yemek\"]\n",
+        "isler = input(\"Yapılacak işi giriniz: \")\n",
+        "yapilacaklar.append(isler)\n",
+        "print(yapilacaklar)\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Q_V2TM7l43X_",
+        "outputId": "56aba252-5131-45ec-a5f7-f503dca04461"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Yapılacak işi giriniz: ödev\n",
+            "['yemek', 'ödev']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "NSOpT0cha6g1"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "kışAyları = [\"Aralık\", \"Ocak\", \"Şubat\"]\n",
+        "print(kışAyları)\n",
+        "print(kışAyları[2])\n",
+        "print(kışAyları[1:2])\n",
+        "print(kışAyları[-1])\n",
+        "print(kışAyları[0])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ayb06_s_9CFL",
+        "outputId": "7e0406fd-8928-409e-9f6f-c48523827624"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Aralık', 'Ocak', 'Şubat']\n",
+            "Şubat\n",
+            "['Ocak']\n",
+            "Şubat\n",
+            "Aralık\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "haber = 'Savunma Sanayii Başkanı İsmail Demir: Yeni sürprizlerimiz olacak, bizi takibe devam edin'\n",
+        "print(haber)\n",
+        "arananKelime = input(\"Aranacak kelimeyi giriniz: \")\n",
+        "sonuc = arananKelime.lower() in haber.lower()\n",
+        "print(str(len(haber)) + \" karakterlik haber içinde arama yapıldı!\")\n",
+        "print(\"Adağınız kelime var mı? \" + str(sonuc)) \n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3M_PA2d2_9Rr",
+        "outputId": "869be506-90d7-4643-9fee-27563743eb22"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Savunma Sanayii Başkanı İsmail Demir: Yeni sürprizlerimiz olacak, bizi takibe devam edin\n",
+            "Aranacak kelimeyi giriniz: sürprizlerimiz\n",
+            "88 karakterlik haber içinde arama yapıldı!\n",
+            "Adağınız kelime var mı? True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "paragraf = \"A taller person can be heavier and still be fit.\"\n",
+        "karakterSayisi = len(paragraf)\n",
+        "print(karakterSayisi)\n",
+        "kontrol = karakterSayisi > 250\n",
+        "print(kontrol)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pZKhLtOWcEVA",
+        "outputId": "a169fedd-a770-4fe5-ce02-6e150cdf047a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "48\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "karsilama = input(\"Adınızı ve soyadınızı giriniz: \")\n",
+        "print(\"Merhaba, \" + karsilama)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UIeiHNnds6Vc",
+        "outputId": "e4e8b8ce-0325-4926-f02b-757a9dede833"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Adınızı ve soyadınızı giriniz: Elçin Çomak\n",
+            "Merhaba, Elçin Çomak\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Yaş hesaplama programı\")\n",
+        "buYil = 2023\n",
+        "dogumTarihi = input(\"Doğum tarihinizi giriniz: \")\n",
+        "yas = buYil - int(dogumTarihi)\n",
+        "print(\"Yaşınız: \" + str(yas))\n",
+        "     "
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BBU6Uvioc3hL",
+        "outputId": "62b1ea13-8ca0-4cc5-d369-0d0dbd095a7d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Yaş hesaplama programı\n",
+            "Doğum tarihinizi giriniz: 2002\n",
+            "Yaşınız: 21\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"*** Test Programı Başladı ***\")\n",
+        "print(\"Soru 1: Yer çekimi var mıdır?\")\n",
+        "soru1 = \"evet\"\n",
+        "cevap1 = input(\"Cevap: \")\n",
+        "sonuc = soru1 == cevap1\n",
+        "print(\"Cevabınız: \" + str(sonuc))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Cp6rsCx7nqfY",
+        "outputId": "88a2ed26-0949-44c3-c60b-d3406a6043e7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "*** Test Programı Başladı ***\n",
+            "Soru 1: Yer çekimi var mıdır?\n",
+            "Cevap: evet\n",
+            "Cevabınız: True\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
